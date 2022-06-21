@@ -1,13 +1,13 @@
-package com.app.myfit.data
+package com.app.roomexample.data
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
-@Entity(tableName = "user")
+@Entity(tableName = "users")
 data class User (
     @PrimaryKey(autoGenerate = true)
-    val id: Int,
-    val f: String,
-    val i: String,
-    val age: Int,
+    val id: Int, // Id пользователя
+    val Name: String, // Имя пользователя
+    val Password: String, // Пароль пользователя
+    val Email: String, // Email пользователя
 )
